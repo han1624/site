@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>萍乡市</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.topnav{
+overflow: hidden;
+margin: 0;
+padding: 0;
+border: 1px solid #e7e7e7;
+background-color:#f3f3f3 ;
+list-style-type: none;
+}
+
+.topnav a{
+  float: left;
+  display: inline-block;
+  text-align: center;
+  color: #666;
+  padding: 14px  16px;
+  text-decoration: none;
+}
+
+
+
+ul {
+    list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+
+li {
+    float: left;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+body {
+  margin: 0;
+  padding: auto;
+}
+
+  .header {
+  background-color: #f1f1f1;
+  height: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+ 
+
+/* 左右两侧宽度 */
+.column.side {
+  width: 20%;
+}
+
+/* 中间区域宽度 */
+.column.middle {
+  width: 60%;
+}
+
+
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 响应式布局 - 小于 600 px 时改为上下布局 */
+@media screen and (max-width: 600px) {
+  .column.side  .column.middle {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>头部区域</h1>
+      </div>
+
+<div class="topnav">
+<ul>
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#news">新闻</a></li>
+  <li><a href="#contact">联系</a></li>
+  <li><a href="#about">关于</a></li>
+</ul>
+</div>
+
+<div class="row">
+    <div class="column side">
+      <h2>左侧栏</h2>
+      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+    
+    <div class="column middle">
+      <h2>主区域</h2>
+      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+    
+    <div class="column side">
+      <h2>右侧栏</h2>
+      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>底部区域</p>
+  </div>
+
+</body>
+</html>
